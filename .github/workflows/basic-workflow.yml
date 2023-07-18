@@ -35,6 +35,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
+  job2:
+    # The type of runner that the job will run on
+    runs-on: [GA Decal]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
       # Runs a single command using the runners shell
       - name: Run a command only if a PR
         if: ${{ github.event_name == 'pull_request' }}
