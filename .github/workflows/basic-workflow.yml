@@ -45,6 +45,7 @@ jobs:
         with:
           repository: im-sandbox-mikaelt/hello-GADecal-composite-action
           path: ./.github/actions/hello-GADecal-composite-action
+          token: ${{ secrets.GH_TOKEN }}
           
 
       - name: Run a composite action from a different repo
